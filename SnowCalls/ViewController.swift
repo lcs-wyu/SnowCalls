@@ -21,7 +21,25 @@ class ViewController: UIViewController {
 
     @IBAction func convertNumber(_ sender: Any) {
         
+        // INPUT
+        // Get the input from the user
+        guard let input = inputNumber.text , input.count > 0 else {
+            outputNumber.text = "Please enter a telephone number to convert"
+            
+            return
+        }
         
+        // PROCESS
+        // 1. Look at each character in the input and apply rules to build output string
+        for character in input {
+            
+            
+            
+            
+            
+        }
+        
+    
         
         
         
@@ -44,13 +62,6 @@ class ViewController: UIViewController {
         
         
     }
-    
-    
-    
-    
-    
-    
-    
     
     
     
