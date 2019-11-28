@@ -29,14 +29,36 @@ class ViewController: UIViewController {
             return
         }
         
+        
         // PROCESS
         // 1. Look at each character in the input and apply rules to build output string
+        var phoneNumber = ""
+        
+        
         for character in input {
-            
-            
-            
-            
-            
+            switch character {
+            case "A","B","C":
+                phoneNumber += "2"
+            case "D","E","F":
+                phoneNumber += "3"
+            case "G","H","I":
+                phoneNumber += "4"
+            case "J","K","L":
+                phoneNumber += "5"
+            case "M","N","O":
+                phoneNumber += "6"
+            case "P","Q","R","S":
+                phoneNumber += "7"
+            case "T","U","V":
+                phoneNumber += "8"
+            case "W","X","Y","Z":
+                phoneNumber += "9"
+            case "-":
+                break
+            default:
+                phoneNumber += "\(character)"
+            }
+            outputNumber.text = "\(phoneNumber)"
         }
         
     
